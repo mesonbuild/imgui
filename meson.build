@@ -3,6 +3,9 @@ project('imgui', 'cpp',
     license: 'MIT'
 )
 
+# Folder `examples` is needed, as it includes
+# the implementations for different rendering backends and
+# context creation APIs
 include_dirs = include_directories('.', 'examples')
 
 sources = ['imgui_demo.cpp', 'imgui_draw.cpp', 'imgui_widgets.cpp', 'imgui.cpp']
