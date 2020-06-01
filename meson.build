@@ -55,19 +55,14 @@ if get_option('metal').enabled()
 	sources += 'examples/imgui_impl_metal.mm'
 endif
 
-# TODO: add other dependencies
-vulkan = dependency('vulkan', required: get_option('vulkan'))
-glfw = dependency('glfw3', required: get_option('glfw'))
-sdl = dependency('sdl', required: get_option('sdl'))
-glut = dependency('glut', required: get_option('glut'))
-
 imgui = library('imgui',
 	sources,
 	dependencies: [
-		vulkan,
-		glfw,
-		sdl,
-		glut,
+		# TODO: add other dependencies
+		dependency('vulkan', required: get_option('vulkan'))
+		dependency('glfw3', required: get_option('glfw'))
+		dependency('sdl', required: get_option('sdl'))
+		dependency('glut', required: get_option('glut'))
 	],
 	include_directories: include_dirs
 )
