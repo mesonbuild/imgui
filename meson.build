@@ -1,5 +1,5 @@
 project('imgui', 'cpp',
-    version: '1.76',
+    version: '1.78',
     license: 'MIT',
 )
 
@@ -61,7 +61,7 @@ imgui = library('imgui',
         # TODO: add other dependencies
         dependency('vulkan', required: get_option('vulkan')),
         dependency('glfw3', required: get_option('glfw')),
-        dependency('sdl', required: get_option('sdl')),
+        dependency('sdl2', required: get_option('sdl2')),
         dependency('glut', required: get_option('glut')),
     ],
     include_directories: include_dirs,

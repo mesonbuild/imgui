@@ -11,7 +11,7 @@ option('vulkan', type: 'feature', value: 'auto')
 #platform
 option('glfw', type: 'feature', value: 'auto')
 option('osx', type: 'feature', value: 'auto')
-option('sdl', type: 'feature', value: 'auto')
+option('sdl2', type: 'feature', value: 'auto')
 option('win32', type: 'feature', value: 'auto')
 option('glut', type: 'feature', value: 'auto')
 
