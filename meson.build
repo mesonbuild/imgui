@@ -30,7 +30,7 @@ endif
 if get_option('win32').enabled()
     sources += 'examples/imgui_impl_win32.cpp'
 endif
-if get_option('sdl').enabled()
+if get_option('sdl2').enabled()
     sources += 'examples/imgui_impl_sdl.cpp'
 endif
 if get_option('glfw').enabled()
