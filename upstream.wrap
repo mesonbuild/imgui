@@ -1,0 +1,7 @@
+[wrap-file]
+directory = imgui-1.78
+
+source_url = https://github.com/ocornut/imgui/archive/v1.78.tar.gz
+source_filename = v1.78.tar.gz
+source_hash = f70bbb17581ee2bd42fda526d9c3dc1a5165f3847ff047483d4d7980e166f9a3
+
