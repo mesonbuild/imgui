@@ -64,6 +64,7 @@ imgui = library('imgui',
         dependency('sdl2', required: get_option('sdl2')),
         dependency('glut', required: get_option('glut')),
         dependency('glew', required: get_option('glew')),
+
     ],
     include_directories: include_dirs,
 )
